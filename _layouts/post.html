@@ -1,0 +1,72 @@
+---
+---
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inconsolata&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .highlight {
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    background-color: rgb(254, 220, 220);
+    margin-bottom: 10;
+  }
+  
+  Pre,code{ 
+    font-family: Courier Prime;
+    font-size: 10pt;
+  }
+
+  pre.highlight {
+    font-family: Courier Prime;
+    margin: auto;
+  }
+
+  body {
+    font-family: Source Sans Pro;
+    font-size: 12pt;
+  }
+
+  .test {
+    font-family: Courier Prime;
+    font-size: 10pt;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    background-color:rgb(254, 220, 220);
+    margin-bottom: 10;
+  }
+</style>
+
+<div class="container">
+  {{content}}
+</div>
+
+<script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/HTML-CSS'],
+    tex2jax: {
+      inlineMath: [ ['$', '$'] ],
+      displayMath: [ ['$$', '$$']],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    messageStyle: 'none',
+    'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+  });
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
