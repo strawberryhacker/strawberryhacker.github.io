@@ -1,0 +1,8 @@
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enx00e04c8f5eac:
+      addresses: [100.100.100.0/24]
+      dhcp4: false
+      dhcp6: false
